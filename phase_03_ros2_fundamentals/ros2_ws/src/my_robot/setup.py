@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
 		'robot_status = my_robot.robot_status:main',
 		'robot_publisher = my_robot.robot_publisher:main',
+		'robot_subscriber = my_robot.robot_subscriber:main',
         ],
     },
 )
