@@ -29,6 +29,12 @@ setup(
 		'robot_subscriber = my_robot.robot_subscriber:main',
 		'robot_service_server = my_robot.robot_service_server:main',
 		'robot_service_client = my_robot.robot_service_client:main',
+		'aswinbot_status = my_robot.final_project.robot_status:main',
+		'aswinbot_subscriber = my_robot.final_project.robot_subscriber:main',
+		'aswinbot_service_server = my_robot.final_project.robot_service_server:main',
+		'aswinbot_service_client = my_robot.final_project.robot_service_client:main',
+		'aswinbot_action_server = my_robot.final_project.robot_action_server:main',
+		'aswinbot_action_client = my_robot.final_project.robot_action_client:main',
         ],
     },
 )
