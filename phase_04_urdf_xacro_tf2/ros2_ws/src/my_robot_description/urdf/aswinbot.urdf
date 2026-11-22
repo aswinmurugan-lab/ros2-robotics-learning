@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<robot name="AswinBot">
+
+    <link name="base_link">
+	
+	<visual>
+		
+		<geometry>
+			<box size="0.4 0.3 0.2"/>
+		</geometry>
+
+
+		<material name="blue">
+			<color rgba="0 0 1 1"/>
+		</material>
+
+	</visual>
+  
+  </link>
+
+    <link name="camera_link">
+	
+	<visual>
+
+		<geometry>
+   			 <box size="0.1 0.1 0.1"/>
+		</geometry>
+
+		<material name="black">
+			<color rgba="0 0 0 1"/>
+		</material>		
+
+	</visual>
+
+    </link>
+
+    <link name="wheel_link">
+
+    	<visual>
+
+        	<geometry>
+            		<cylinder radius="0.05" length="0.04"/>
+        	</geometry>
+
+       	        <material name="black">
+            		<color rgba="0 0 0 1"/>
+        	</material>
+
+    	</visual>
+
+    </link>
+
+    <joint name="camera_joint" type="fixed">
+
+    	<parent link="base_link"/>
+        <child link="camera_link"/>
+
+    </joint>
+
+    <joint name="wheel_joint" type="continuous">
+
+        <parent link="base_link"/>
+        <child link="wheel_link"/>
+
+    </joint>
+
+</robot>
+
